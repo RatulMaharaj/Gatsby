@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 // import { Link } from "gatsby"
 
@@ -9,16 +9,20 @@ export default () => {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
+            fields {
+              slug
+            }
+            timeToRead
             frontmatter {
               title
               date(formatString: "MMMM DD, YYYY")
               featuredImage {
-                childImageSharp{
-                  fluid{
+                childImageSharp {
+                  fluid {
                     ...GatsbyImageSharpFluid
                   }
                 }
-              }        
+              }
             }
           }
         }
@@ -36,13 +40,20 @@ export default () => {
               <article>
                 <header>
                   <h3>
-                    <a>{frontmatter.title}</a>
+                    <Link to={edge.node.fields.slug}>{frontmatter.title}</Link>
                   </h3>
                   <time className="published" datetime={frontmatter.date}>
                     {frontmatter.date}
+                  <span className="readtime">{edge.node.timeToRead} min read </span> 
                   </time>
+                  
                 </header>
-                <Img className="image" fluid={frontmatter.featuredImage.childImageSharp.fluid}/>
+                <Link to={edge.node.fields.slug} className="image">
+                  <Img
+                    className="image"
+                    fluid={frontmatter.featuredImage.childImageSharp.fluid}
+                  />
+                </Link>
               </article>
             </li>
           )

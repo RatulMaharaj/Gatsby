@@ -4,7 +4,6 @@ title: "An intro to Actuarial Science"
 description: "The industry, The qualification and the people who fund it"
 date: "2020-03-26"
 tags: ["actuarial"] 
-path: '/an-intro-to-actuarial-science'
 authorImage: "https://avatars0.githubusercontent.com/u/56479869"
 featuredImage: '../images/image_01.jpg'
 ---
@@ -19,9 +18,7 @@ I'm occasionally approached by a bright eyed teenager who is uncertain about the
 I think a great way to understand what Actuarial Science is, is to understand where it came from and why it exists. But first lets start with insurance.
 
 <!-- <a target="_blank" href="https://www.directknowledge.com/actuarial-science-history/"> -->
-> The beginning of the modern day insurance industry is said to have been found in ancient shipping transactions. A ship would leave ancient Greece laden with wine, olives or pottery bound for Africa. It would return with valuable and exotic spices, metals, or wood. 
-
->Wealthy individuals funded these voyages and agreed not to seek repayment if the cargo was lost. However, they required repayment of their investment with a high rate of interest if the ship returned with cargo intact. The interest rate compensated the investor for both the time value of the money and the risk associated with the transaction. As world trade expanded, traditional investors became unwilling to assume the risk. By the mid-1300’s, professional risk-takers, or insurers, had filled the gap. 
+> The beginning of the modern day insurance industry is said to have been found in ancient shipping transactions. A ship would leave ancient Greece laden with wine, olives or pottery bound for Africa. It would return with valuable and exotic spices, metals, or wood. Wealthy individuals funded these voyages and agreed not to seek repayment if the cargo was lost. However, they required repayment of their investment with a high rate of interest if the ship returned with cargo intact. The interest rate compensated the investor for both the time value of the money and the risk associated with the transaction. As world trade expanded, traditional investors became unwilling to assume the risk. By the mid-1300’s, professional risk-takers, or insurers, had filled the gap. 
 
 Covering a ship and it's cargo for loss or damage was one of the earliest forms of insurance. Over time, other forms of insurance that focused on managing a lenders risk emerged. For example, early life insurance was designed to pay off a loan if the borrower died before paying it off. Another early type of insurance is a pension, which provides income to someone who is no longer able to work. This is insurance against the risk of outliving one’s savings. 
 
@@ -42,7 +39,6 @@ In the actuarial science industry,  a fully qualified professional is known as a
 > An actuary is someone who applies analytical, statistical and mathematical skills to model matters of uncertainty and solve real world financial and business problems. 
 
 These skills are quite valuable when facing problems of an uncertain nature which tend to be quite common in insurance, retirement, investments and risk management environments. Your typical actuary performs tasks such as calculating the price an insurer should charge customers for various insurance benefits, understanding the impact that different investments have on a pension fund’s expected risk and return, or calculating a bank’s risk due to loan customers being unable to repay their debt. 
-
 
 Actuaries undergo rigorous academic and practical training in order to master a wide range of skills and are recognised to be pragmatic and innovative.
 

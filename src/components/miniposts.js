@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 // import { Link } from "gatsby"
 
@@ -9,6 +9,9 @@ export default () => {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
+            fields{
+              slug
+            }
             frontmatter {
               authorImage
               title
@@ -26,6 +29,7 @@ export default () => {
       }
     }
   `)
+  console.log(data)
   const { edges } = data.allMarkdownRemark
   return (
     <section>
@@ -35,11 +39,17 @@ export default () => {
             return (
                 <article className="mini-post" key={frontmatter.title}>
                     <header>
-                        <h3>{frontmatter.title}</h3>
+                        <h3>
+                        <Link to={edge.node.fields.slug}>
+                          {frontmatter.title}
+                        </Link>
+                        </h3>
                         <time className="published" datetime={frontmatter.date}> {frontmatter.date}</time>
-                        <a href="" className="author"><img src="https://avatars0.githubusercontent.com/u/56479869" alt="" /></a>
+                        <a href="/" className="author"><img src="https://avatars0.githubusercontent.com/u/56479869" alt="" /></a>
                     </header>
-                <Img className="image" fluid={frontmatter.featuredImage.childImageSharp.fluid}/>
+                    <Link to={edge.node.fields.slug} className="image">
+                    <Img className="image" fluid={frontmatter.featuredImage.childImageSharp.fluid}/>
+                    </Link>
               </article>
           )
         })}

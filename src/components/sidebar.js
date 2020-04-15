@@ -12,7 +12,7 @@ export default () => (
         <section id="intro">
             <header>
                 <h2>Ratul Maharaj</h2>
-                <p>Actuarial Student, <a target="_blank" href="https://www.google.com/search?q=cape+town"> 
+                <p>Actuarial Student, <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=cape+town"> 
                 Cape Town</a></p>
             </header>
             <br/>

@@ -4,7 +4,6 @@ title: "Getting started with python"
 description: "Everything you need to start writing code in python"
 date: "2020-03-29"
 tags: ["tech", "python" ]
-path: '/getting-started-with-python'
 authorImage: "https://avatars0.githubusercontent.com/u/56479869"
 featuredImage: '../images/image_02.jpg'
 ---
