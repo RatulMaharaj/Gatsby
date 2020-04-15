@@ -2622,11 +2622,6 @@ input, select, textarea {
 					text-transform: uppercase;
 				}
 
-				ul.posts article header .readtime{
-					padding: 1em;
-				
-				}
-
 				ul.posts article header > :last-child {
 					margin-bottom: 0;
 				}

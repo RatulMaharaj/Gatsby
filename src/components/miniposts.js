@@ -12,6 +12,7 @@ export default () => {
             fields{
               slug
             }
+            timeToRead
             frontmatter {
               authorImage
               title
@@ -44,7 +45,10 @@ export default () => {
                           {frontmatter.title}
                         </Link>
                         </h3>
-                        <time className="published" datetime={frontmatter.date}> {frontmatter.date}</time>
+                        <time className="published" datetime={frontmatter.date}> {frontmatter.date}
+                        &nbsp; &#8226; &nbsp;
+                        <span className="readtime">{edge.node.timeToRead} min read </span> 
+                        </time>
                         <a href="/" className="author"><img src="https://avatars0.githubusercontent.com/u/56479869" alt="" /></a>
                     </header>
                     <Link to={edge.node.fields.slug} className="image">
