@@ -8,7 +8,7 @@ export default () => {
   const [Deaths, setDeaths] = useState(0)
   const [Confirmed, setConfirmed] = useState(0)
   const [Recoveries, setRecoveries] = useState(0)
-  const [LastUpdate, setLastUpdate] = useState(0)
+  const [LastUpdate, setLastUpdate] = useState("")
   
   useEffect(() => {
     // get data using fetch
