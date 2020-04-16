@@ -48,14 +48,18 @@ export default () => {
                       {frontmatter.title}
                     </Link>
                   </h2>
-                  <p>{frontmatter.description}</p>
+                  <p>
+                    {frontmatter.description} &nbsp;&#8226; &nbsp;
+                    <span>{edge.node.timeToRead} min read </span> 
+                  </p>
                 </div>
                 <div className="meta">
                   <time className="published" dateTime={frontmatter.date}>
-                    {frontmatter.date}
+                    {frontmatter.date} 
                   </time>
                   <Link to="/" className="author">
-                    <span className="name">{frontmatter.author}</span>
+                    <span className="name">{frontmatter.author} 
+                    </span>
                     <img
                       src="https://avatars0.githubusercontent.com/u/56479869"
                       alt=""

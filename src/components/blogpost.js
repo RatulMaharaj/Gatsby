@@ -27,6 +27,13 @@ export default ({ data }) => {
 								
             <h1></h1>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <footer>
+            <ul class="stats">
+                  {post.frontmatter.tags.map(tag => {
+                    return <li>{tag}</li>
+                  })}
+                </ul>
+              </footer>
         </article>
         <center>
           <Footer/>

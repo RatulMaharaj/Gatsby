@@ -8,80 +8,59 @@ authorImage: "https://avatars0.githubusercontent.com/u/56479869"
 featuredImage: '../images/image_02.jpg'
 ---
 
-Python is a programming language that was created by Guido van Rossum in the late 1980s. It is commonly referred to as being a general purpose language which means that you can use python for doing pretty much anything you want. From developing desktop applications, websites and web applications to data science, machine learning or building an Iron Man suit - you can do it all with python (well, sort of). 
 
+Python is a programming language that was created by Guido van Rossum in the late 1980s. It is commonly referred to as being a general purpose language which means that you can use python for doing pretty much anything you want. From developing desktop applications, websites and web applications to data science, machine learning or building an Iron Man suit - you can do it all with python (well, sort of). 
 <!-- end -->
 
-# A little bit of history
+# What is python?
+
+Python is a high-level programming language, which makes it easier for you to focus on the core functionality of your application or program. It has a simple syntax which makes the code easier for humans to read. It is also an interpreted language, which means that it doesn't need to be <a target="_blank" href="https://www.webopedia.com/TERM/C/compile.html">compiled</a> before it's programs are executed. Instead another program, called an interpreter, reads the program and executes it on the fly.
 
 
-I think a great way to understand what Actuarial Science is, is to understand where it came from and why it exists. But first lets start with insurance.
+# Why should you consider learning python?
 
-<!-- <a target="_blank" href="https://www.directknowledge.com/actuarial-science-history/"> -->
-> The beginning of the modern day insurance industry is said to have been found in ancient shipping transactions. A ship would leave ancient Greece laden with wine, olives or pottery bound for Africa. It would return with valuable and exotic spices, metals, or wood. 
+Computer programming gives you the confidence to be creative and enables you to experiment with ideas to create something that is uniquely yours.
 
->Wealthy individuals funded these voyages and agreed not to seek repayment if the cargo was lost. However, they required repayment of their investment with a high rate of interest if the ship returned with cargo intact. The interest rate compensated the investor for both the time value of the money and the risk associated with the transaction. As world trade expanded, traditional investors became unwilling to assume the risk. By the mid-1300’s, professional risk-takers, or insurers, had filled the gap. 
+<a>
+<blockquote>
+"Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn." - Stephen Hawking
+</blockquote>
+</a>
 
-Covering a ship and it's cargo for loss or damage was one of the earliest forms of insurance. Over time, other forms of insurance that focused on managing a lenders risk emerged. For example, early life insurance was designed to pay off a loan if the borrower died before paying it off. Another early type of insurance is a pension, which provides income to someone who is no longer able to work. This is insurance against the risk of outliving one’s savings. 
+Python is a great first programming language to learn, especially if you're interested in <a target="_blank" href="https://automatetheboringstuff.com/">automating the boring stuff</a> at work. One of the main reasons it's such a great language, other than it being easy to learn, is that it is <a target="_blank" href="https://opensource.com/resources/what-open-source">open source</a> and has a massive community of developers who can help you out when you get stuck. It's simple yet super powerful which is evidenced by the fact that many modern day tech giants such as Instagram, Facebook, Spotify, Amazon and Netflix (to name a few) all use python for some of their back-end services. 
 
-These concepts – payment upon a death, and payments continuing until a death – are key to many types of insurance. They require the similar ability to predict the timing of a death in order to ascertain the cost of the insurance. Of course, it is nearly impossible to predict the death of one individual. However, mathematical advances in the 1600’s made insurance pricing practicable by allowing predictions on a group of people.
+So here's what you need to get started.
 
-<!-- <a target="_blank" href="https://www.swissre.com/dam/jcr:638f00a0-71b9-4d8e-a960-dddaf9ba57cb/150_history_of_insurance.pdf"> -->
+# Installing Python
 
-> Insurance, and especially life insurance, resonated with the search for laws, the statistical recording of natural events and the calculation of future developments. Behind this innovation was the conviction that the world, and all its possible future states, could be predicted and computed.
+Python comes pre-installed on most new computers. To check if you have python installed already, open up a new <a target="_blank" href="https://www.wikihow.com/Open-the-Command-Prompt-in-Windows">command prompt</a> or <a target="_blank" href="https://www.wikihow.com/Open-a-Terminal-Window-in-Mac">terminal</a> window and type `python` or `python3`. If you get an error, then chances are python isn't yet installed on your machine.
 
-Enter Actuarial Science.
+Head over to <a target="_blank" href="https://www.python.org/">python.org</a> and navigate to the downloads page where you'll be able to find the latest version of python for your operating system. During the installation process, be sure to check the box that says 'Add Python to PATH' - this will allow you to use python from anywhere on your computer. If you would like a step-by-step guide on how to install python on your computer, you should be able to find one at <a target="_blank" href="https://realpython.com/installing-python/">realpython.com</a>
 
-# What is an actuary?
+Another way to get python onto your computer, which works particularly well if you're on a computer that is controlled by your employer's IT administrator, is to install <a href="https://www.anaconda.com/distribution/">Anaconda</a> (or <a target="_blank" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> if you're looking to save some space). This includes everything you need to get started, such as python itself, a few popular python packages as well as Jupyter Notebooks - a great tool used to create and share documents that contain live code, equations, visualizations and explanatory text. Even if you already have python installed, I would still recommend that you check out the Anaconda distribution.
 
-In the actuarial science industry,  a fully qualified professional is known as an actuary.
+# What is PIP?
 
-<!-- <a target="_blank" href="https://www.actuarialsociety.org.za/becoming-an-actuary/"> -->
+<a href="https://pip.pypa.io/en/stable/">pip</a> is the standard package manager for python. It will allow you to install and manage additional libraries and dependencies which are not included in the standard python library. pip is typically included in the standard python installer. To check if you have pip, after installing python, you can type `pip --version` in a command prompt or terminal window. You can install python packages by using the command `pip install package_name` or `pip install package_name==version` to install a specific version of a package.
 
-> An actuary is someone who applies analytical, statistical and mathematical skills to model matters of uncertainty and solve real world financial and business problems. 
+A python package is made up of python modules, which are essentially files with a .py extension containing pre-written python code that other developers have created for you. There have been a multitude of python packages made, which you can find on <a target="_blank" href="https://pypi.org/">PyPI</a> (the Python Package Index) which is the official repository for third-party software for the python programming language. PyPI is where pip gets python packages from when you use pip to install a new package on your computer.
 
-These skills are quite valuable when facing problems of an uncertain nature which tend to be quite common in insurance, retirement, investments and risk management environments. Your typical actuary performs tasks such as calculating the price an insurer should charge customers for various insurance benefits, understanding the impact that different investments have on a pension fund’s expected risk and return, or calculating a bank’s risk due to loan customers being unable to repay their debt. 
+# A text editor
 
-
-Actuaries undergo rigorous academic and practical training in order to master a wide range of skills and are recognised to be pragmatic and innovative.
-
-# How do I become an actuary?
-
-In order to use the designation *actuary*, in the south african context at least, one would need to become an associate or fellow member of the Actuarial Society of South Africa (ASSA). This is achieved by passing a series of professional exams.
-
-Exemptions from writing some of these exams can be attained by meeting certain requirements at the university you attend. You can find more detailed information about these exams <a target= "_blank" href="https://www.actuarialsociety.org.za/student-zone/2019-curriculum-page/">here</a>, You may also find the <a target="_blank" href="https://www.actuarialsociety.org.za/download/course-structure-2019/?wpdmdl=8644%22%3E%3Cb%3E%20Course%20Structure%20or%20Roadmap%3C/b%3E%3C/a%3E%20%3Cdiv%20class=%22author-journals%22%3E%3Cb%3EAuthor:%3C/b%3E%3Cbr%3E%3Cdiv%20class=%22expects%22%3E%3C/div%3E%20%3C/div%3E%20%20%20%20%20%20%20%20%20%3C/div%3E%3Cbr%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class=%22%20pull-template%22%20align=%22left%22%3E%3Ca%20target=%22_blank%22%20href=%22Course%20Structure%20or%20Roadmap%22%3E%3C/a%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%3C/div%3E%3C/div%3E">ASSA course map</a> to be quite useful, if you're interested.
-
-# Which universities offer actuarial science?
-
-In South Africa, the following universities have structured actuarial science programmes and are accredited with the Actuarial Society of South Africa:
-	
-<ul>
-    <li><a target="_blank" href="https://www.commerce.uct.ac.za/Managementstudies/actuarialscience/">University of Cape Town (UCT)</a></li>
-    <li><a target="_blank" href="http://www.sun.ac.za/english/faculty/economy/statistics">Stellenbosch University (SU)</a></li>
-    <li><a target="_blank" href="https://www.wits.ac.za/course-finder/undergraduate/science/actuarial-science/">University of Witwatersrand (WITS)</a></li>
-    <li><a target="_blank" href="https://www.up.ac.za/insurance-and-actuarial-science">University of Pretoria (UP)</a></li>
-    <li><a target="_blank" href="https://www.ufs.ac.za/natagri/departments-and-divisions/mathematical-statistics-and-actuarial-science-home/actuarial-study-support/exemption-agreement">University of the Free State (UFS)</a></li>
-    <li><a target="_blank" href="http://natural-sciences.nwu.ac.za/bmi">North West University (NWU)</a></li>
-</ul>	
-
-Actuarial degrees offered at these institutions are usually made up of a number of interrelated subjects such as Mathematics, Statistics, Economics, Finance and Computer Science.
-								
-
-# Can I get a bursary or scholarship to study Actuarial Science?</h1>
-                                
-An actuarial degree can be very expensive, but thankfully there are many organisations out there looking to invest in your future. Here's a list of Actuarial Science Bursaries worth applying for:
-
-<ul>
-    <li><a target="_blank" href="https://www.saadp.co.za/application">South African Actuaries Development Programme (SAADP)</a></li>
-    <li><a target="_blank" href="https://www.oldmutual.co.za/careers/actuarial-bursary/">Old Mutual</a></li>
-    <li><a target="_blank" href="https://www.sanlam.co.za/careers/Pages/bursaries.aspx">Sanlam</a></li>
-    <li><a  target="_blank" href="https://www.liberty.co.za/Pages/bursaries.aspx">Liberty</a></li>
-    <li><a target="_blank" href="https://www.allangrayorbis.org/entrepreneurship-development-programmes/fellowship/">Allan Gray Orbis Foundation</a></li>
-    <li><a target="_blank" href="https://www.oasis.co.za/default/content.aspx?initial=true&moveto=1030">Oasis</a></li>
-    <li><a target="_blank" href="https://www.my4in1.com/apply.html">FirstRand (Quants)</a></li>
-</ul>
-
-Although slightly less common, universities also sometimes offer scholarships to students who meet their criteria. You could also apply to <a target="_blank" href="http://www.nsfas.org.za/content/how-to-apply.html">NSFAS</a> for funding. If you're still interested in learning more,  a great place to start would be the Actuarial Society of South Africa (ASSA) <a href="https://www.actuarialsociety.org.za/">website</a>.	
+The last thing you would need, in order to start coding, would be a decent text editor or an <a target="_blank" href="https://www.google.com/search?q=Integrated+Development+Environment">Integrated Development Environment (IDE)</a>. My recommendation would be <a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a>, which is a Microsoft product that can be used with just about any language. It's clean and customizable with some cool themes but more importantly, it's free and open source! Once you've installed it you would need to install the python extension and you should be good to go. They have also made a tutorial in setting up a development environment in VS Code which I will link <a target="_blank" href="https://code.visualstudio.com/docs/python/python-tutorial">here</a>.
 
 
-Good luck and all the best with your Actuarial Journey!
+Other popular choices include <a target="_blank" href="https://atom.io/">Atom</a>, <a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a>, <a target="_blank" href="https://www.vim.org/">VIM</a> and <a target="_blank" href="https://www.jetbrains.com/pycharm/">PyCharm</a>.
+
+
+# Your First Python Programme
+
+Once you're all setup, it's almost tradition to create a 'Hello World' programme to ensure that everything is working correctly. You can do this by creating a file named hello.py which contains the following code.
+
+```
+print('Hello World!')
+```
+
+If everything works as expected, you should see a 'Hello World!' on your screen. If not, don't panic. One of the great things about python, as I mentioned before, is the community. You should be able to do a quick google search for just about any issue you have (you could even copy and paste an error you get straight into google) and chances are that someone else has had and solved the exact same problem.
+
+Good luck and happy coding!
