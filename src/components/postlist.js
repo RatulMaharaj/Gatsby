@@ -42,7 +42,7 @@ export default () => {
                   <h3>
                     <Link to={edge.node.fields.slug}>{frontmatter.title}</Link>
                   </h3>
-                  <time className="published" datetime={frontmatter.date}>
+                  <time className="published" dateTime={frontmatter.date}>
                     {frontmatter.date} &#8226; &nbsp;
                   <span className="readtime">{edge.node.timeToRead} min read </span> 
                   </time>

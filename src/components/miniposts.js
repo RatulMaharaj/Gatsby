@@ -30,7 +30,6 @@ export default () => {
       }
     }
   `)
-  console.log(data)
   const { edges } = data.allMarkdownRemark
   return (
     <section>
@@ -45,7 +44,7 @@ export default () => {
                           {frontmatter.title}
                         </Link>
                         </h3>
-                        <time className="published" datetime={frontmatter.date}> {frontmatter.date}
+                        <time className="published" dateTime={frontmatter.date}> {frontmatter.date}
                         &nbsp; &#8226; &nbsp;
                         <span className="readtime">{edge.node.timeToRead} min read </span> 
                         </time>

@@ -52,11 +52,11 @@ In South Africa, the following universities have structured actuarial science pr
 	
 <ul>
     <li><a target="_blank" href="https://www.commerce.uct.ac.za/Managementstudies/actuarialscience/">University of Cape Town (UCT)</a></li>
-    <li><a target="_blank" href="http://www.sun.ac.za/english/faculty/economy/statistics">Stellenbosch University (SU)</a></li>
+    <li><a target="_blank" href="https://www.sun.ac.za/english/faculty/economy/statistics">Stellenbosch University (SU)</a></li>
     <li><a target="_blank" href="https://www.wits.ac.za/course-finder/undergraduate/science/actuarial-science/">University of Witwatersrand (WITS)</a></li>
     <li><a target="_blank" href="https://www.up.ac.za/insurance-and-actuarial-science">University of Pretoria (UP)</a></li>
     <li><a target="_blank" href="https://www.ufs.ac.za/natagri/departments-and-divisions/mathematical-statistics-and-actuarial-science-home/actuarial-study-support/exemption-agreement">University of the Free State (UFS)</a></li>
-    <li><a target="_blank" href="http://natural-sciences.nwu.ac.za/bmi">North West University (NWU)</a></li>
+    <li><a target="_blank" href="http://natural-sciences.nwu.ac.za/actuarial-science">North West University (NWU)</a></li>
 </ul>	
 
 Actuarial degrees offered at these institutions are usually made up of a number of interrelated subjects such as Mathematics, Statistics, Economics, Finance and Computer Science.

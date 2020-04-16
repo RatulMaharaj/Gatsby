@@ -83,7 +83,7 @@ export default () => {
                     </Link>
                   </li>
                 </ul>
-                <ul class="stats">
+                <ul className="stats">
                   {frontmatter.tags.map(tag => {
                     return <li>{tag}</li>
                   })}
