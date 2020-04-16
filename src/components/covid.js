@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import CountUp from 'react-countup';
 
 export default () => {
   // Client-side Runtime Data Fetching
@@ -8,7 +9,7 @@ export default () => {
   const [Confirmed, setConfirmed] = useState(0)
   const [Recoveries, setRecoveries] = useState(0)
   const [LastUpdate, setLastUpdate] = useState(0)
-
+  
   useEffect(() => {
     // get data using fetch
     fetch(url, {
@@ -19,12 +20,13 @@ export default () => {
       },
     }).then(response => response.json()) // parse JSON from request
     .then(resultData =>{
-        setDeaths(resultData["data"]["covid19Stats"][0]["deaths"])
-        setConfirmed(resultData["data"]["covid19Stats"][0]["confirmed"])
-        setRecoveries(resultData["data"]["covid19Stats"][0]["recovered"])
-        setLastUpdate(resultData["data"]["covid19Stats"][0]["lastUpdate"])
+      setDeaths(resultData["data"]["covid19Stats"][0]["deaths"])
+      setConfirmed(resultData["data"]["covid19Stats"][0]["confirmed"])
+      setRecoveries(resultData["data"]["covid19Stats"][0]["recovered"])
+      setLastUpdate(resultData["data"]["covid19Stats"][0]["lastUpdate"])
     })
-  })
+
+  },[])
   
   return (
     <div>
@@ -32,15 +34,13 @@ export default () => {
       <br />
       <ul className="alt">
         <li>
-            <h4>Confirmed cases: {Confirmed}</h4>
+            <h4>Confirmed cases: <CountUp end={Confirmed}/></h4>
         </li>
         <li>
-          <h4>Deaths: {Deaths}</h4>
+          <h4>Deaths: <CountUp end={Deaths}/></h4>
         </li>
         <li>
-          <h4>
-            Recoveries: {Recoveries}
-          </h4>
+          <h4>Recoveries: <CountUp end={Recoveries}/></h4>
         </li>
       </ul>
       <h4>

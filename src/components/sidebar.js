@@ -18,7 +18,6 @@ export default () => (
             <br/>
             <Covid/>
         </section>
-
         <Miniposts/>
         <Postlist/>
         <About/>
