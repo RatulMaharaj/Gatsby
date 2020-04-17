@@ -11,6 +11,7 @@ module.exports = {
     description: `The personal blog and website of Ratul Maharaj.`,
   },
   plugins: [
+    `gatsby-plugin-feed`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
