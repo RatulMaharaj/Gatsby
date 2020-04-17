@@ -22,9 +22,8 @@ module.exports = {
         short_name: "Ratul Maharaj",
         background_color: "#242728",
         theme_color: "#242728",
-        start_url: "/",
+        start_url: "/",// This path is relative to the root of the site.
         display: "standalone",
-        icon: "./favicon.ico", // This path is relative to the root of the site.
       },
     },
     {
