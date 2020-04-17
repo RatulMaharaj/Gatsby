@@ -60,6 +60,7 @@ module.exports = {
           serialize: ({ query: { site, allMarkdownRemark } }) => {
             return allMarkdownRemark.edges.map(edge => {
               return Object.assign({}, edge.node.frontmatter, {
+                language: 'en',
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
@@ -99,7 +100,7 @@ module.exports = {
             }
           `,
           output: "/rss.xml",
-          title: "The Ratulmaharaj.com RSS Feed",
+          title: "The Ratul Maharaj Blog",
         }
       ]
 
