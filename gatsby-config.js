@@ -11,9 +11,22 @@ module.exports = {
     description: `The personal blog and website of Ratul Maharaj.`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Ratul Maharaj",
+        short_name: "Ratul Maharaj",
+        background_color: "#242728",
+        theme_color: "#242728",
+        start_url: "/",
+        display: "standalone",
+        icon: "./favicon.ico", // This path is relative to the root of the site.
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options:{
