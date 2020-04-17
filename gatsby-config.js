@@ -99,7 +99,7 @@ module.exports = {
               }
             }
           `,
-          output: "/rss.xml",
+          output: "/rss-feed.xml",
           title: "The Ratul Maharaj Blog",
         }
       ]
