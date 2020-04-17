@@ -1,6 +1,6 @@
 ---
 author: Ratul Maharaj
-title: "Getting started with python"
+title: "Getting Started With Python"
 description: "Everything you need to start writing code in python"
 date: "2020-03-29"
 tags: ["tech", "python" ]

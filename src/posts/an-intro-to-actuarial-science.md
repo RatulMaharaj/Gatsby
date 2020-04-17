@@ -1,6 +1,6 @@
 ---
 author: Ratul Maharaj
-title: "An intro to Actuarial Science"
+title: "An Intro to Actuarial Science"
 description: "The industry, The qualification and the people who fund it"
 date: "2020-03-26"
 tags: ["actuarial"] 
