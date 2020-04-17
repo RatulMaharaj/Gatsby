@@ -46,7 +46,7 @@ In order to use the designation *actuary*, in the south african context at least
 
 Exemptions from writing some of these exams can be attained by meeting certain requirements at the university you attend. You can find more detailed information about these exams <a target= "_blank" href="https://www.actuarialsociety.org.za/student-zone/2019-curriculum-page/">here</a>, You may also find the <a target="_blank" href="https://www.actuarialsociety.org.za/download/course-structure-2019/?wpdmdl=8644%22%3E%3Cb%3E%20Course%20Structure%20or%20Roadmap%3C/b%3E%3C/a%3E%20%3Cdiv%20class=%22author-journals%22%3E%3Cb%3EAuthor:%3C/b%3E%3Cbr%3E%3Cdiv%20class=%22expects%22%3E%3C/div%3E%20%3C/div%3E%20%20%20%20%20%20%20%20%20%3C/div%3E%3Cbr%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class=%22%20pull-template%22%20align=%22left%22%3E%3Ca%20target=%22_blank%22%20href=%22Course%20Structure%20or%20Roadmap%22%3E%3C/a%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%3C/div%3E%3C/div%3E">ASSA course map</a> to be quite useful, if you're interested.
 
-# Which universities offer actuarial science?
+# Which universities offer Actuarial Science?
 
 In South Africa, the following universities have structured actuarial science programmes and are accredited with the Actuarial Society of South Africa:
 	

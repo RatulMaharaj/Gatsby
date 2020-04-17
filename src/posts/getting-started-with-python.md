@@ -12,12 +12,12 @@ featuredImage: '../images/image_02.jpg'
 Python is a programming language that was created by Guido van Rossum in the late 1980s. It is commonly referred to as being a general purpose language which means that you can use python for doing pretty much anything you want. From developing desktop applications, websites and web applications to data science, machine learning or building an Iron Man suit - you can do it all with python (well, sort of). 
 <!-- end -->
 
-# What is python?
+# What is Python?
 
 Python is a high-level programming language, which makes it easier for you to focus on the core functionality of your application or program. It has a simple syntax which makes the code easier for humans to read. It is also an interpreted language, which means that it doesn't need to be <a target="_blank" href="https://www.webopedia.com/TERM/C/compile.html">compiled</a> before it's programs are executed. Instead another program, called an interpreter, reads the program and executes it on the fly.
 
 
-# Why should you consider learning python?
+# Why should you consider learning Python?
 
 Computer programming gives you the confidence to be creative and enables you to experiment with ideas to create something that is uniquely yours.
 
@@ -39,7 +39,7 @@ Head over to <a target="_blank" href="https://www.python.org/">python.org</a> an
 
 Another way to get python onto your computer, which works particularly well if you're on a computer that is controlled by your employer's IT administrator, is to install <a href="https://www.anaconda.com/distribution/">Anaconda</a> (or <a target="_blank" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> if you're looking to save some space). This includes everything you need to get started, such as python itself, a few popular python packages as well as Jupyter Notebooks - a great tool used to create and share documents that contain live code, equations, visualizations and explanatory text. Even if you already have python installed, I would still recommend that you check out the Anaconda distribution.
 
-# What is PIP?
+# What is pip?
 
 <a href="https://pip.pypa.io/en/stable/">pip</a> is the standard package manager for python. It will allow you to install and manage additional libraries and dependencies which are not included in the standard python library. pip is typically included in the standard python installer. To check if you have pip, after installing python, you can type `pip --version` in a command prompt or terminal window. You can install python packages by using the command `pip install package_name` or `pip install package_name==version` to install a specific version of a package.
 
@@ -53,7 +53,7 @@ The last thing you would need, in order to start coding, would be a decent text 
 Other popular choices include <a target="_blank" href="https://atom.io/">Atom</a>, <a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a>, <a target="_blank" href="https://www.vim.org/">VIM</a> and <a target="_blank" href="https://www.jetbrains.com/pycharm/">PyCharm</a>.
 
 
-# Your First Python Programme
+# Your first Python programme
 
 Once you're all setup, it's almost tradition to create a 'Hello World' programme to ensure that everything is working correctly. You can do this by creating a file named hello.py which contains the following code.
 
