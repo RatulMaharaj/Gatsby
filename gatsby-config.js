@@ -100,7 +100,7 @@ module.exports = {
             }
           `,
           output: "/rss-feed.xml",
-          title: "The Ratul Maharaj Blog",
+          title: "Ratul Maharaj",
         }
       ]
 
