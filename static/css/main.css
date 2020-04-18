@@ -1895,7 +1895,7 @@ input, select, textarea {
 		button:after,
 		.button:before,
 		.button:after {
-			color: #aaaaaa;
+			color: #000000;
 			position: relative;
 		}
 
@@ -1992,7 +1992,7 @@ input, select, textarea {
 			}
 
 			form.search:before {
-				color: #aaaaaa;
+				color: #000000;
 				content: '\f002';
 				display: block;
 				height: 2.75em;
@@ -2204,22 +2204,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: #aaaaaa !important;
+		color: #000000 !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #aaaaaa !important;
+		color: #000000 !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #aaaaaa !important;
+		color: #000000 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #aaaaaa !important;
+		color: #000000 !important;
 		opacity: 1.0;
 	}
 
@@ -3225,7 +3225,7 @@ input, select, textarea {
 					#header .main ul li > a {
 						text-decoration: none;
 						border-bottom: 0;
-						color: #aaaaaa;
+						color: #000000;
 						overflow: hidden;
 						position: relative;
 						text-indent: 4em;
@@ -3501,11 +3501,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer .icons {
-		color: #8b8b8b;
+		color: #aaa;
 	}
 
 	#footer .copyright {
-		color: #8b8b8b;
+		color: #aaa;
 		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 0.5em;
 		font-weight: 400;

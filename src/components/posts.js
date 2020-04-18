@@ -49,7 +49,7 @@ export default () => {
                     </Link>
                   </h2>
                   <p>
-                    {frontmatter.description} &nbsp;&#8226; &nbsp;
+                    {frontmatter.description} &nbsp; &#8226; &nbsp;
                     <span>{edge.node.timeToRead} min read </span> 
                   </p>
                 </div>

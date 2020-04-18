@@ -13,7 +13,7 @@ export default ({ data }) => {
           <header>
             <div className="title">
               <h2><a>{post.frontmatter.title}</a></h2>
-              <p>{post.frontmatter.description}<br/><br/><p>{post.timeToRead} min read</p></p>
+              <p>{post.frontmatter.description}&nbsp;&#8226; &nbsp;<span>{post.timeToRead} min read</span></p>
             </div>
             <div className="meta">
               <time className="published" dateTime={post.frontmatter.date}>
