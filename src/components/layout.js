@@ -13,7 +13,6 @@ export default ({children}) => (
         <script src="js/breakpoints.min.js"/>
         <script src="js/main.js"/>
     </Helmet>
-
     <Header/>
     <Menu/>
     {children}

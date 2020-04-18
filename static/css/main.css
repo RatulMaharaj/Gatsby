@@ -3478,16 +3478,16 @@ input, select, textarea {
 
 	@media screen and (max-width: 1280px) {
 
-		#intro {
+		#specialIntro {
 			margin: 0 0 3em 0;
 			text-align: center;
 		}
 
-			#intro header h2 {
+			#specialIntro header h2 {
 				font-size: 2em;
 			}
 
-			#intro header p {
+			#specialIntro header p {
 				font-size: 0.7em;
 			}
 
@@ -3495,24 +3495,24 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-		#intro {
+		#specialIntro {
 			margin: 0 0 1.5em 0;
 			padding: 1.25em 0;
 		}
 
-			#intro > :last-child {
+			#specialIntro > :last-child {
 				margin-bottom: 0;
 			}
 
-			#intro .logo {
+			#specialIntro .logo {
 				margin: 0 0 0.5em 0;
 			}
 
-			#intro header h2 {
+			#specialIntro header h2 {
 				font-size: 1.25em;
 			}
 
-			#intro header > :last-child {
+			#specialIntro header > :last-child {
 				margin-bottom: 0;
 			}
 
@@ -3654,4 +3654,15 @@ input, select, textarea {
 	}
 
 }
-  
+
+#specialIntro{
+	display: none;
+}
+@media screen and (max-width:1280px){
+	#intro{
+		display: none;	
+	}
+	#specialIntro{
+		display: block;
+	}
+}
