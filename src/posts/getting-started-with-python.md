@@ -57,7 +57,7 @@ Other popular choices include <a target="_blank" href="https://atom.io/">Atom</a
 
 Once you're all setup, it's almost tradition to create a 'Hello World' programme to ensure that everything is working correctly. You can do this by creating a file named hello.py which contains the following code.
 
-```
+```python
 print('Hello World!')
 ```
 

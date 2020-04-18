@@ -22,14 +22,46 @@ module.exports = {
         short_name: "Ratul Maharaj",
         background_color: "#242728",
         theme_color: "#242728",
-        start_url: "/",// This path is relative to the root of the site.
+        start_url: "/", // This path is relative to the root of the site.
         display: "standalone",
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
-      options:{
+      options: {
         excerpt_separator: `<!-- end -->`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
+              escapeEntities: {},
+            },
+          },
+        ],
       },
     },
     {
@@ -53,8 +85,8 @@ module.exports = {
       },
     },
     {
-      resolve:`gatsby-plugin-feed`,
-      options:{
+      resolve: `gatsby-plugin-feed`,
+      options: {
         query: `
         {
           site {
@@ -67,24 +99,27 @@ module.exports = {
           }
         }
       `,
-      feeds:[
-        {
-          serialize: ({ query: { site, allMarkdownRemark } }) => {
-            return allMarkdownRemark.edges.map(edge => {
-              return Object.assign({}, edge.node.frontmatter, {
-                language: 'en',
-                description: edge.node.frontmatter.description,
-                date: edge.node.frontmatter.date,
-                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                enclosure: edge.node.frontmatter.featuredImage && {
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.childImageSharp.fluid.originalImg,
-              },
-                custom_elements: [{ "content:encoded": edge.node.html }],
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  language: "en",
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  enclosure: edge.node.frontmatter.featuredImage && {
+                    url:
+                      site.siteMetadata.siteUrl +
+                      edge.node.frontmatter.featuredImage.childImageSharp.fluid
+                        .originalImg,
+                  },
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
               })
-            })
-          },
-          query: `
+            },
+            query: `
             {
               allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___date] },
@@ -111,13 +146,11 @@ module.exports = {
               }
             }
           `,
-          output: "/rss-feed.xml",
-          title: "Ratul Maharaj",
-        }
-      ]
-
+            output: "/rss-feed.xml",
+            title: "Ratul Maharaj",
+          },
+        ],
       },
-
-    }
+    },
   ],
 }
