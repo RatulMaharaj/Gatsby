@@ -11,7 +11,6 @@ export default ({children}) => (
 	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <script src="js/browser.min.js"/>
         <script src="js/breakpoints.min.js"/>
-        <script src="js/main.js"/>
     </Helmet>
     <Header/>
     <Menu/>
