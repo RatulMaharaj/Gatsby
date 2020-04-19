@@ -2322,7 +2322,12 @@ input, select, textarea {
 				.image.featured {
 					margin: 0 0 1.5em 0;
 				}
+			}
 
+			@media screen and (max-width: 480px) {
+				.image img{
+					border-radius: 0em;
+				}
 			}
 
 		.image.main {
@@ -2633,6 +2638,7 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.2s ease-out !important;
 				-ms-transition: -ms-transform 0.2s ease-out !important;
 				transition: transform 0.2s ease-out !important;
+				border-radius: 0em;
 				width: 100%;
 			}
 
