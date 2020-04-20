@@ -44,7 +44,9 @@ pre[class*="language-"] {
   margin:0.2em;
   border-radius: 0.25em;
   font-size: 0.85em;
+  font-weight: normal;
   white-space: normal;
+  background: #3c3b3b;
 }
 
 .token.comment,
@@ -91,7 +93,7 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: #fff;
+  color: #ffe44b;
 }
 
 .token.entity,

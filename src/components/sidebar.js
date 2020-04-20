@@ -1,5 +1,4 @@
 import React from 'react'
-import Covid from "./covid"
 import Miniposts from "./miniposts"
 import Postlist from "./postlist"
 import About from "./about"

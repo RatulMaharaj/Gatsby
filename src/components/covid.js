@@ -3,8 +3,7 @@ import CountUp from 'react-countup';
 
 export default () => {
   // Client-side Runtime Data Fetching
-  const url = `https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=South%20Africa`
-
+  
   const [Deaths, setDeaths] = useState(0)
   const [Confirmed, setConfirmed] = useState(0)
   const [Recoveries, setRecoveries] = useState(0)
@@ -12,6 +11,8 @@ export default () => {
   
   useEffect(() => {
     // get data using fetch
+    const url = `https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=South%20Africa`
+    
     fetch(url, {
       method: "GET",
       headers: {
