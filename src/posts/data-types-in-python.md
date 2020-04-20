@@ -192,7 +192,7 @@ myset = {1, 1, 1, 2, 2, 3}
 print(myset)
 ```
 
-It is important to note that ordinary sets cannot be nested as seen above with lists as sets are not [hashable.](https://docs.python.org/2/glossary.html#term-hashable) 
+It is important to note that ordinary sets cannot be nested as seen above with lists as sets are not <a href="https://docs.python.org/2/glossary.html#term-hashable" target="_blank">hashable.</a> 
 
 ### Tuples
 
@@ -289,8 +289,8 @@ mydict['key'] = 'A different value'
 print(mydict)
 ```
 
-So that's all for now - be sure to play around with these to see what you can come up with. 
+That's all for now - be sure to play around with these to see what you can come up with. 
 
-Oh yes, and the reason you're still here...
+Oh yes, and the main reason you're still here...
 
 *You can't handle the truth! :)*
