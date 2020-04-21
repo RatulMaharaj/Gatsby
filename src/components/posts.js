@@ -20,9 +20,9 @@ export default () => {
               tags
               title
               date(formatString: "MMMM DD, YYYY")
-              featuredImage {
+              featuredImage{
                 childImageSharp {
-                  fluid {
+                  fluid(quality:65){
                     ...GatsbyImageSharpFluid
                   }
                 }
