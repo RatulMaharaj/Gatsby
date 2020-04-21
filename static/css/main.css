@@ -2,7 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
 :root{
---main-bg-color: #f4f4f4;
+--main-bg-color: rgb(44, 44, 44);
+--main-page-color: #5a5a5a;
+--selection-color: rgb(190, 190, 190);
+--accent-color: #2ebaae;
+--footer-color: #aaa;
+--main-font-color:#ffffff;	  
+--sec-font-color:#ffffff;
+--black-color: #000000;
+--main-line-color: rgb(160, 160, 160, 0.4);
+/* --main-bg-color: #f4f4f4;
 --main-page-color: #fff;
 --selection-color: rgb(190, 190, 190);
 --accent-color: #2ebaae;
@@ -10,7 +19,7 @@
 --main-font-color:#3c3b3b;	  
 --sec-font-color:#646464;
 --black-color: #000000;
---main-line-color: rgb(160, 160, 160, 0.4);
+--main-line-color: rgb(160, 160, 160, 0.4); */
 }
 
 html, body, div, span, applet, object,
