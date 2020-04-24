@@ -8,9 +8,6 @@ export default () => (
   <Layout>
     <Intro id="specialIntro"/>
     <Posts/>
-    <div id="sidebar">
-    <Intro id="intro"/>
     <Sidebar/>
-    </div>
   </Layout>
 );
