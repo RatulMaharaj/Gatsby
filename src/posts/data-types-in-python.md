@@ -235,7 +235,7 @@ mystring = "It's useful if you need to use an apostrophe."
 print(mystring)
 
 # a string with triple quotes
-mystring = ''' The are useful for
+mystring = ''' These are useful for
 creating strings that span
 multiple lines!
 '''
