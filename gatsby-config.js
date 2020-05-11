@@ -29,6 +29,7 @@ module.exports = {
         theme_color_in_head: false,
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
