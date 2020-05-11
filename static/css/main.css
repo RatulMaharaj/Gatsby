@@ -60,6 +60,7 @@ body {
 
 ::-webkit-scrollbar {
 	width: 10px !important;
+	height: 10px !important;
 	background-color: transparent;
 }
 
