@@ -19,12 +19,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Ratul Maharaj",
-        short_name: "Ratul Maharaj",
-        background_color: "#242728",
-        theme_color: "#242728",
-        start_url: "/", // This path is relative to the root of the site.
-        display: "standalone",
+        name: `Ratul Maharaj`,
+        short_name: `Ratul Maharaj`,
+        background_color: `#1f1f1f`,
+        theme_color: `#1f1f1f`,
+        start_url: `/`, // This path is relative to the root of the site.
+        display: `standalone`,
+        icon: `static/icon.png`,
+        theme_color_in_head: false,
       },
     },
     {

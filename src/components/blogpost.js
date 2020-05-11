@@ -12,7 +12,7 @@ export default ({ data }) => {
         <article className="post full">
           <header>
             <div className="title">
-              <h2><a>{post.frontmatter.title}</a></h2>
+              <h2>{post.frontmatter.title}</h2>
               <p>{post.frontmatter.description}&nbsp;&#8226; &nbsp;<span>{post.timeToRead} min read</span></p>
             </div>
             <div className="meta">
@@ -28,7 +28,7 @@ export default ({ data }) => {
             <h1></h1>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <footer>
-            <ul class="stats">
+            <ul className="stats">
                   {post.frontmatter.tags.map(tag => {
                     return <li>{tag}</li>
                   })}
