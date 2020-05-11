@@ -11,12 +11,13 @@ body{
 	--sec-font-color:#646464;
 	--black-color: #000000;
 	--main-line-color: rgb(160, 160, 160, 0.4);
+  	--scrollbar:#aaa;
 }
 
 body.dark{
 	-webkit-font-smoothing: antialiased;
 	--main-bg-color: #121212;
-	--main-page-color: rgb(31, 31, 31) ;
+	--main-page-color: rgb(31, 31, 31);
 	--selection-color: rgb(190, 190, 190);
 	--accent-color: #2ebaae;
 	--footer-color: #aaa;
@@ -24,6 +25,7 @@ body.dark{
 	--sec-font-color:#fff;
 	--black-color: #fff;
 	--main-line-color: rgb(160, 160, 160, 0.4);
+	--scrollbar: #444;
 }
 
 html, body, div, span, applet, object,
@@ -51,6 +53,19 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	overflow: overlay;
+}
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+	width: 10px !important;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar); 
+	border-radius: 0.25em;
 }
 
 ol, ul {
