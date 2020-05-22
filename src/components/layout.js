@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Header from "./header"
-import Menu from "./menu"
+// import Menu from "./menu"
 
 export default ({children}) => (
     <div id="wrapper">
@@ -13,7 +13,7 @@ export default ({children}) => (
         <script src="js/breakpoints.min.js"/>
     </Helmet>
     <Header/>
-    <Menu/>
+    {/* <Menu/> */}
     {children}
     </div>
 )

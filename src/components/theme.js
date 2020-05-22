@@ -1,5 +1,14 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import { IoIosSunny, IoIosMoon } from "react-icons/io"
+
+function themeIcon(theme) {
+  if (theme === "dark") {
+    return <IoIosMoon className="moon" />
+  } else {
+    return <IoIosSunny className="sun" />
+  }
+}
 
 export default () => {
   return (
@@ -11,8 +20,8 @@ export default () => {
               type="checkbox"
               onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
               checked={theme === "dark"}
-            />{" "}
-            <span className="slider round"></span>
+            />
+            <div className="themeIcon">{themeIcon(theme)}</div>
           </label>
         </div>
       )}

@@ -3,7 +3,7 @@ author: Ratul Maharaj
 title: "Data Types In Python"
 description: "An exploration of various pythonic data types"
 date: "2020-04-21"
-tags: ["tech"]
+tags: ["tech", "python"]
 authorImage: "https://avatars0.githubusercontent.com/u/56479869"
 featuredImage: '../images/image_03.jpg'
 ---

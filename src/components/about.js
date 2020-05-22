@@ -4,9 +4,9 @@ export default () => (
     <section className="blurb">
         <h2>About</h2>
         <p>
-            Hi there! My name is Ratul. I'm an actuarial student with passion for creativity and problem solving.
-            I also have a keen interest in lots of random things such as coding, photography and learning to
-            play guitar. I'm always excited to learn and share, so I hope that you find something useful here!
+            Welcome to my blog!
+            <br/><br/>
+            I'm an actuarial student with a passion for writing code and creating things. I'm always excited to learn and share, so I hope that you find something useful here!
         </p>
     </section>
 )

@@ -10,7 +10,7 @@ import Footer from "./footer"
 export default () => (
     <section id="sidebar">
         <Intro id="intro"/>
-        <Miniposts/>
+        {/* <Miniposts/> */}
         <Postlist/>
         <About/>
         <Spotify/>

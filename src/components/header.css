@@ -1,0 +1,105 @@
+/* Header */
+
+body {
+  padding-top: 4rem;
+}
+
+#header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-page-color) !important;
+  box-shadow: var(--shadow);
+  height: 4rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#header h1 {
+  white-space: nowrap;
+  margin: 0;
+}
+
+.logo,
+.theme {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+.logo {
+  padding: 0 0 0 2.5rem;
+}
+
+.theme {
+  padding: 0 2.5rem 0 0;
+  font-size: 1em;
+}
+
+.toggler {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch {
+  padding: 0;
+  margin: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sun {
+  color: inherit;
+}
+.sun:hover {
+  color: var(--accent-color);
+}
+
+.moon {
+  color: var(--accent-color);
+}
+
+.moon:hover {
+  color: inherit;
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    height: 3.5rem;
+  }
+
+  #header h1 a {
+    font-size: 0.7rem;
+  }
+
+  .logo {
+    padding: 0 0 0 1.5rem;
+  }
+  
+  .theme {
+    padding: 0 1.5rem 0 0;
+  }
+  
+}
