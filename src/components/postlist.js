@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-// import { Link } from "gatsby"
+import "./postlist.css"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +31,8 @@ export default () => {
   `)
   const { edges } = data.allMarkdownRemark
   return (
-    <section>
+    <section className="blurb">
+      <h2>Recent Posts</h2>
       <ul className="posts">
         {edges.map(edge => {
           const { frontmatter } = edge.node

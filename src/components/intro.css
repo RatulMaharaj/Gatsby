@@ -1,0 +1,98 @@
+/* Intro */
+
+#intro .logo {
+  border-bottom: 0;
+  display: inline-block;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+  position: relative;
+  width: 4em;
+}
+
+#intro .logo:before {
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.Introheader{
+  margin-bottom: 2rem;
+}
+
+.Introheader h2 {
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+.Introheader p {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  
+}
+
+@media screen and (max-width: 1280px) {
+  #specialIntro {
+    margin: 0 0 3em 0;
+    text-align: center;
+  }
+
+  .Introheader h2 {
+    font-size: 2em;
+  }
+
+  .Introheader p{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #specialIntro {
+    margin: 0 0 1.5em 0;
+    padding: 1.25em 0;
+  }
+
+  #specialIntro > :last-child {
+    margin-bottom: 0;
+  }
+
+  #specialIntro .logo {
+    margin: 0 0 0.5em 0;
+  }
+
+  .Introheader > :last-child {
+    margin-bottom: 0;
+  }
+  .Introheader h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Move Intro to top of page on resize */
+
+#specialIntro {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #intro{
+    display: none;
+  }
+ 
+  #specialIntro {
+    display: block;
+  }
+  
+}

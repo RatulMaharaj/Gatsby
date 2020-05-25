@@ -21,7 +21,7 @@ export default () => {
               onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
               checked={theme === "dark"}
             />
-            <div className="themeIcon">{themeIcon(theme)}</div>
+            <span className="themeIcon">{themeIcon(theme)}</span>
           </label>
         </div>
       )}

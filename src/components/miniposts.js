@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-// import { Link } from "gatsby"
+import "./miniposts.css"
 
 export default () => {
   const data = useStaticQuery(graphql`

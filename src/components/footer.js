@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope, FaRss } from "react-icons/fa"
+import "./footer.css"
 
 export default () => (
   <section id="footer">

@@ -3,15 +3,15 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
-
+import "../components/fullpost.css"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
       <div id="main">
-        <article className="post full">
-          <header>
+        <article className="full post">
+          <header className="fullheader">
             <div className="title">
               <h2>{post.frontmatter.title}</h2>
               <p>{post.frontmatter.description}&nbsp;&#8226; &nbsp;<span>{post.timeToRead} min read</span></p>
@@ -24,11 +24,11 @@ export default ({ data }) => {
             </div>
           </header>
           
-          <span className="image featured"><Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/></span>
+          <span className="image fullfeatured"><Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid}/></span>
 								
             <h1></h1>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <footer>
+            <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <footer className="postfooter">
             <ul className="stats">
                   {post.frontmatter.tags.map(tag => {
                     return <li>{tag}</li>

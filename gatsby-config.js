@@ -13,9 +13,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-dark-mode`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,6 +36,11 @@ module.exports = {
         excerpt_separator: `<!-- end -->`,
         plugins: [
           {
+            resolve:`gatsby-remark-images`,
+            options: {
+              quality: 90,
+
+            },
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
