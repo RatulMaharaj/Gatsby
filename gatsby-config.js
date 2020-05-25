@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
     title: `Ratul Maharaj`,
@@ -36,11 +30,12 @@ module.exports = {
         excerpt_separator: `<!-- end -->`,
         plugins: [
           {
-            resolve:`gatsby-remark-images`,
+            resolve: `gatsby-remark-images`,
             options: {
               quality: 90,
-
             },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",

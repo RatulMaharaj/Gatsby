@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
-import "../components/fullpost.css"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -45,7 +44,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
@@ -58,7 +57,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         featuredImage {
           childImageSharp {
-            fluid(quality:75){
+            fluid(quality:90){
               ...GatsbyImageSharpFluid
             }
           }

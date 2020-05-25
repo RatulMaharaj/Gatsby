@@ -1,6 +1,5 @@
 import React from 'react'
 import Intro from "./intro"
-import Miniposts from "./miniposts"
 import Postlist from "./postlist"
 import About from "./about"
 import Spotify from "./spotify"
