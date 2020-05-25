@@ -70,14 +70,14 @@ body {
 }
 
 .sun {
-  color: inherit;
+  color: inherit !important;
 }
 .sun:hover {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 .moon {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 .moon:hover {
